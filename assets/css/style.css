@@ -599,6 +599,16 @@ hr {
   position: relative;
 }
 
+.athulphonenumber {
+  text-decoration: underline;
+}
+.athulemail {
+  text-decoration: underline;
+}
+.usefull-link {
+  text-decoration: underline;
+}
+
 .st-parallax-shape.st-style1 {
   position: absolute;
   height: 250px;
