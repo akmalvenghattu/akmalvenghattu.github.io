@@ -20,9 +20,65 @@
     <link rel="stylesheet" href="assets/css/textRotate.css" />
     <link rel="stylesheet" href="assets/css/select2.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      /* Style for the WhatsApp icon */
+      .whatsapp-icon {
+        position: fixed;
+        bottom: 30px; /* Adjust as needed */
+        right: 20px; /* Adjust as needed */
+        z-index: 1000; /* Ensure it appears above other content */
+        cursor: pointer;
+      }
+      .fixed-tel {
+        position: fixed;
+        bottom: 85px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        z-index: 9999;
+        text-align: center;
+      }
+
+      .fixed-tel:before {
+        content: "";
+        width: 50px;
+        height: 50px;
+        background-color: #0cb8b6;
+        position: absolute;
+        border-radius: 100%;
+        box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12),
+          0 1px 1px 0 rgba(0, 0, 0, 0.24);
+        z-index: 1;
+        top: 0;
+        left: 0;
+      }
+
+      .fixed-tel i {
+        vertical-align: middle;
+        z-index: 2;
+        position: relative;
+        color: #fcfdff;
+        font-size: 1.5rem;
+      }
+    </style>
   </head>
 
   <body>
+    <a
+      href="https://api.whatsapp.com/send?phone=+917715877047"
+      class="whatsapp-icon"
+    >
+      <img src="assets/img/whatsapp.svg" alt="WhatsApp Icon" width="50" />
+    </a>
+    <a
+      class="fixed-tel"
+      href="tel:+917715877047"
+      target="_blank"
+      title="Call Now"
+      ><i class="fas fa-phone-alt"></i
+    ></a>
     <div class="st-perloader">
       <div class="st-perloader-in">
         <div class="st-wave-first">
@@ -115,7 +171,9 @@
                   <li><a href="#home" class="st-smooth-move">Home</a></li>
                   <li><a href="#about" class="st-smooth-move">About</a></li>
                   <li>
-                    <a href="#department" class="st-smooth-move">How was work?</a>
+                    <a href="#department" class="st-smooth-move"
+                      >How it works ?</a
+                    >
                   </li>
                   <!-- <li><a href="#doctors" class="st-smooth-move">Doctors</a></li> -->
                   <!-- <li><a href="#gallery" class="st-smooth-move">Gallery</a></li> -->
@@ -177,15 +235,23 @@
               <div class="st-hero-subtitle">
                 <h4>New beginning from home</h4>
                 <br />
-                We provide advanced physiotherapy treatment from your home,
+                We provide best physiotherapy treatment at home,
                 <br />
                 which makes you heal and recover faster
+                <br />
+                <h4 style="margin-top: 15px">
+                  BEST PHYSIOTHERAPY AT HOME BANGALOR
+                </h4>
               </div>
               <div class="st-hero-btn">
                 <a
-                  href="#appointment"
+                  href="tel:+917715877047"
                   class="st-btn st-style1 st-color1 st-smooth-move"
-                  >Appointment</a
+                  ><i
+                    class="fa fa-phone"
+                    style="transform: rotate(90deg); margin-right: 10px"
+                  ></i
+                  >Call</a
                 >
               </div>
             </div>
@@ -271,9 +337,9 @@
               ></div>
             </div>
             <div class="st-section-heading-subtitle text-center">
-              <h6>HOME BASED TREATMENT</h6>
+              <h6>HOME PHYSIOTHERAPY SERVICE</h6>
               <br />
-              <h6>VIDEO CONSULTATION</h6>
+              <h6>PHYSIOTHERAPY VIDEO CONSULTATION</h6>
               <br />
               <h6>TELECOMMUNICATION REGARDING TREATMENT</h6>
               <br />
@@ -288,7 +354,7 @@
         <div class="st-height-b120 st-height-lg-b80"></div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-4">
+            <!-- <div class="col-lg-4">
               <div class="st-iconbox st-style1 workcard">
                 <div class="st-iconbox-icon st-purple-box">
                   <svg
@@ -383,7 +449,7 @@
                 </div>
               </div>
               <div class="st-height-b0 st-height-lg-b30"></div>
-            </div>
+            </div> -->
             <!-- .col -->
             <div class="col-lg-4">
               <div class="st-iconbox st-style1 workcard">
@@ -530,6 +596,14 @@
                         the disability and impairment. our expertise treatment
                         from home can give maximum recovery from impairment to
                         lead healthy and quality life .
+                      </p>
+                      <p>
+                        We have half decade of experience in physiotherapy
+                        treatment in bangalore. For those in bangalore searching
+                        “ at home physiotherapy near me “ or physiotherapy near
+                        me “ or “ physiotherapy at home near me “ or “ in-home
+                        physiotherapy “ or “ physiotherapy clinic near me “ in
+                        google. We are best choice
                       </p>
                     </div>
                     <div class="st-height-b25 st-height-lg-b25"></div>
@@ -696,7 +770,9 @@
                     src="assets/img/svg/booking-svgrepo-com.svg"
                     alt="Book session"
                   />
-                  <span>Book session</span>
+                  <span style="font-size: 10px; line-height: normal"
+                    >Book physiotherapy at home</span
+                  >
                 </a>
               </li>
 
@@ -706,7 +782,7 @@
                     src="assets/img/svg/house-visiting.svg"
                     alt="Physiotherapist visit"
                   />
-                  <span>Physiotherapist visit</span>
+                  <span>Phsiotherapist home visit</span>
                 </a>
               </li>
               <li class="st-tab-title">
@@ -747,15 +823,19 @@
                               <span>Book session</span>
                             </h2>
                             <h4 class="st-imagebox-subtitle">
-                              Book your session by dropping a message or by
-                              calling us directly.
+                              Book Physiotherapy at home by dropping a message
+                              or by calling us directly.
                             </h4>
-                            <div class="st-imagebox-text">.</div>
+                            <div class="st-imagebox-text"></div>
                           </div>
                           <div class="st-imagebox-btn">
                             <a
-                              href="#"
+                              href="tel:+7715877047"
                               class="st-btn st-style1 st-size-medium st-color1"
+                              ><i
+                                class="fas fa-phone-alt"
+                                style="margin-top: 5px; margin-right: 5px"
+                              ></i
                               >Book Now</a
                             >
                           </div>
@@ -884,7 +964,7 @@
         <div class="container">
           <div class="st-section-heading st-style1">
             <h2 class="st-section-heading-title">
-              PHYSIOTHERAPIST FOR EXERCISING OLD PARENTS
+              PHYSIOTHERAPIST AT HOME FOR EXERCISING OLD PARENTS
             </h2>
             <div class="st-seperator">
               <div
@@ -942,7 +1022,7 @@
         <div class="container">
           <div class="st-section-heading st-style1">
             <h2 class="st-section-heading-title">
-              STROKE REHABILITATION SPECIALIST
+              PHYSIOTHERAPY AT HOME FOR STROKE REHABILITATION
             </h2>
             <div class="st-seperator">
               <div
@@ -993,7 +1073,7 @@
         <div class="st-height-b120 st-height-lg-b50"></div>
         <div class="container">
           <div class="st-section-heading st-style1">
-            <h2 class="st-section-heading-title">BENEFITS OF HOME TREATMENT</h2>
+            <h2 class="st-section-heading-title">BENEFITS OF PHYSIOTHERAPY HOME TREATMENT</h2>
             <div class="st-seperator">
               <div
                 class="st-seperator-left wow fadeInLeft"
@@ -1021,7 +1101,7 @@
                     <div class="st-height-b20 st-height-lg-b20"></div>
                     <div class="st-text-block-text">
                       <h6>
-                        Home treatment provide numerous benefits for patients
+                        Physiotherapy home treatment provide numerous benefits for patients
                         than hospital and clinical enviroment
                       </h6>
                       <p>-Family can monitor treatment</p>
@@ -1223,6 +1303,18 @@
                     advice
                   </div>
                 </div>
+                 <!-- .st-accordian -->
+                 <div class="st-accordian">
+                  <div class="st-accordian-title">
+                    What are the services included in home physiotherapy services in bangalore ?
+                    <span class="st-accordian-toggle fa fa-angle-down"></span>
+                  </div>
+                  <div class="st-accordian-body">
+                    Home physiotherapy services in bangalore include diverse range of treatment include
+                     Musculoskeletal physiotherapy,  Paediatric physiotherapy, Geriatric physiotherapy, 
+                     Sports physiotherapy, Neurological physiotherapy, Psychiatric treatment and more
+                  </div>
+                </div>
                 <!-- .st-accordian -->
                 <div class="st-accordian">
                   <div class="st-accordian-title">
@@ -1239,7 +1331,7 @@
                 <!-- .st-accordian -->
                 <div class="st-accordian">
                   <div class="st-accordian-title">
-                    Do you provide all mechineries required for treatment ?
+                    Do you provide all machinery required for treatment ?
                     <span class="st-accordian-toggle fa fa-angle-down"></span>
                   </div>
                   <div class="st-accordian-body">
@@ -1247,6 +1339,17 @@
                     required for treatment
                   </div>
                 </div>
+                   <!-- .st-accordian -->
+                   <div class="st-accordian">
+                    <div class="st-accordian-title">
+                      How much is the average cost for physiotherapy home session in bangalore ?
+                      <span class="st-accordian-toggle fa fa-angle-down"></span>
+                    </div>
+                    <div class="st-accordian-body">
+                      Physiotherapy at home in bangalore offers variable prices influenced by patients severity. 
+                      Despite these variables, at-home physiotherapy in bangalore remains cost effective and affordable
+                    </div>
+                  </div>
                 <!-- .st-accordian -->
                 <div class="st-accordian">
                   <div class="st-accordian-title">
@@ -1367,8 +1470,8 @@
                     /> -->
                     <div class="st-height-b25 st-height-lg-b25"></div>
                     <div class="st-footer-text">
-                      We provide advanced physiotherapy treatment from your home,
-                      which makes you heal and recover faster.
+                      We provide advanced physiotherapy treatment from your
+                      home, which makes you heal and recover faster.
                     </div>
                     <div class="st-height-b25 st-height-lg-b25"></div>
                     <ul class="st-social-btn st-style1 st-mp0">
@@ -1395,7 +1498,7 @@
                   <ul class="st-footer-widget-nav st-mp0">
                     <li>
                       <a class="usefull-link" href="https://g.co/kgs/UCZR25"
-                        ><i class="fas fa-chevron-right "></i>Google Business</a
+                        ><i class="fas fa-chevron-right"></i>Google Business</a
                       >
                     </li>
                   </ul>
